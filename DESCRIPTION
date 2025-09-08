@@ -1,11 +1,12 @@
 Package: DatabaseConnector
 Type: Package
 Title: Connecting to Various Database Platforms
-Version: 6.4.0
-Date: 2025-01-30
+Version: 7.0.0
+Date: 2025-09-08
 Authors@R: c(
     person("Martijn", "Schuemie", email = "schuemie@ohdsi.org", role = c("aut", "cre")),
     person("Marc", "Suchard", role = c("aut")),
+    person("Adam", "Black", role = c("aut")),
     person("Observational Health Data Science and Informatics", role = c("cph")),
     person("Microsoft Inc.", role = c("cph"), comment = "SQL Server JDBC driver"),
     person("PostgreSQL Global Development Group", role = c("cph"), comment = "PostgreSQL JDBC driver"),
@@ -18,25 +19,26 @@ Description: An R 'DataBase Interface' ('DBI') compatible interface to various d
     other 'DBI' drivers to connect to databases.
 SystemRequirements: Java (>= 8)
 Depends: R (>= 4.0.0)
-Imports: rJava, SqlRender (>= 1.19.1), methods, stringr, readr, rlang,
+Imports: rJava, SqlRender (>= 1.19.2), methods, stringr, readr, rlang,
         utils, DBI (>= 1.0.0), urltools, bit64, checkmate, digest,
         dbplyr (>= 2.2.0)
 Suggests: aws.s3, R.utils, withr, testthat, DBItest, knitr, rmarkdown,
-        RSQLite, ssh, Andromeda, dplyr, RPostgres, odbc, duckdb, pool,
-        ParallelLogger, AzureStor
+        RSQLite, ssh, Andromeda, dplyr, RPostgres, odbc, duckdb,
+        bigrquery, pool, ParallelLogger, AzureStor
 License: Apache License
 VignetteBuilder: knitr
 URL: https://ohdsi.github.io/DatabaseConnector/,
         https://github.com/OHDSI/DatabaseConnector
 BugReports: https://github.com/OHDSI/DatabaseConnector/issues
 Copyright: See file COPYRIGHTS
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 Roxygen: list(markdown = TRUE)
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2025-01-30 10:05:52 UTC; schuemie
+Packaged: 2025-09-08 05:54:44 UTC; schuemie
 Author: Martijn Schuemie [aut, cre],
   Marc Suchard [aut],
+  Adam Black [aut],
   Observational Health Data Science and Informatics [cph],
   Microsoft Inc. [cph] (SQL Server JDBC driver),
   PostgreSQL Global Development Group [cph] (PostgreSQL JDBC driver),
